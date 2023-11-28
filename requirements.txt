@@ -1,0 +1,10 @@
+streamlit
+pandas 
+numpy
+sys
+datetime 
+openpyxl
+babel
+io
+warnings
+json
