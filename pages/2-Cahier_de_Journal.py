@@ -265,7 +265,7 @@ def EvSc_manuel_level(level, manuel):
 def U_W_D(fr_manuel1, fr_manuel2, math_manuel1, math_manuel2, es_manuel1, es_manuel2, C1, C2, séance_de_lundi, u):#,in_t,ou_t,rec_t,switch_t):
     global buffer
     buffer = BytesIO()
-    emplois=pd.read_csv(r"C:\Users\hp\Downloads\emplois_3_4_(2).csv")
+    emplois=st.session_state["emplois"]
     emplois.dropna(inplace=True)
     emplois.index = range(emplois.shape[0])
     emplois[["Sèance", "Durèe"]] = emplois[["Sèance", "Durèe"]].astype("int")
