@@ -62,7 +62,8 @@ def fr_manuel_level(manuel, level):
 # Maths
 
 def maths_manuel_level(manuel, level):
-    moufid1 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Almoufid\Repa Maths Moufid 1aep.csv")
+    moufid1 = pd.DataFrame()
+    #moufid1 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Almoufid\Repa Maths Moufid 1aep.csv")
     moufid2 = pd.DataFrame()
     moufid3 = pd.DataFrame()
     moufid4 = pd.DataFrame()
