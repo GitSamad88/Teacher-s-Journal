@@ -5,6 +5,9 @@ import numpy as np
 st.set_page_config(
     page_title="Multipage App")
 
+st.sidebar.write("This app is made by "+"<a href='www.linkedin.com/in/abdessamad-taoufiq-082013209' id='my-link'>TAOUFIQ ABDESSAMAD</a>", unsafe_allow_html=True)
+
+
 st.title("Le Cahier Journalier Educatif")
 st.write("Bienvenue,"
          " Le Cahier Journalier Educatif est une application novatrice conçue spécialement pour simplifier la vie des enseignants du cycle primaire. "
