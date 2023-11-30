@@ -13,6 +13,7 @@ st.write("Bienvenue,"
 
 col1,col2=st.columns([0.4,0.6])
 col1.header("Fonctionnalités Clés :")
+col2.image("https://almouggar.com/web/image/product.template/428319/image")
 col1.write("1. ***Création Facile de Cahiers de Journal :*** "
          "Avec Journal Educatif, la création de cahiers de journal n'a jamais été aussi simple. "
          "Les enseignants peuvent rapidement enregistrer leurs observations,"
@@ -23,6 +24,7 @@ col1.write("2. ***Personnalisation Intuitive :*** "
          "Chaque enseignant a sa propre façon de documenter le progrès de ses élèves. Journal Educatif permet une personnalisation complète,"
          " offrant la flexibilité nécessaire pour s'adapter aux différents styles d'enseignement.")
 
+col2.image("https://almouggar.com/web/image/product.template/524364/image")
 col1.write("3. ***Suivi du Progrès Individualisé :*** "
          " Grâce à notre fonction de suivi du progrès,"
          " les enseignants peuvent aisément suivre l'évolution de chaque élève au fil du temps."
