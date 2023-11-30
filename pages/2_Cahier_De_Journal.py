@@ -6,8 +6,6 @@
 # !pip3 install tabula-py
 # !pip3 install openpyxl
 
-
-# In[2]:
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -68,19 +66,21 @@ def maths_manuel_level(manuel, level):
     moufid2 = pd.DataFrame()
     moufid3 = pd.DataFrame()
     moufid4 = pd.DataFrame()
-    moufid5 = pd.read_csv(
-        r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Almoufid\Repa Maths Almoufid 5aep .csv")
+    moufid5 = pd.DataFrame()
+    #moufid5 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Almoufid\Repa Maths Almoufid 5aep .csv")
     moufid6 = pd.DataFrame()
     moufid_manuel = [moufid1, moufid2, moufid3, moufid4, moufid5, moufid6]
 
     # Jayed
     jayed1 = pd.DataFrame()
-    jayed2 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Jayed\Repa Maths Jayed 2 aep.csv")
+    jayed2 = pd.DataFrame()
+    #jayed2 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Jayed\Repa Maths Jayed 2 aep.csv")
     jayed3 = pd.DataFrame()
     #jayed4 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Jayed\Repartition_Maths_Jayed_4aep.csv")
     jayed4 = pd.read_csv("https://docs.google.com/spreadsheets/d/1ckXxHHh5mCB_YMD11ObGEep0UfGJGPqpXDNY62_f0mc/gviz/tq?tqx=out:csv&sheet=Repartition_Maths_Jayed_4aep")
     jayed5 = pd.DataFrame()
-    jayed6 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Jayed\Repa Maths Jayed 6 aep.csv")
+    jayed6 = pd.DataFrame()
+    #jayed6 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\Maths repa\Jayed\Repa Maths Jayed 6 aep.csv")
     jayed_manuel = [jayed1, jayed2, jayed3, jayed4, jayed5, jayed6]
 
     # Fadaa:
@@ -114,16 +114,12 @@ maths_manuel_level(manuel="الجيد", level=1)
 
 
 # ### Eveil Scientifque:
-#
-
-# In[106]:
-
-
 def EvSc_manuel_level(level, manuel):
     # Jadid
-    es_Jadid1 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Jadid\Repa EvSc Jadid 1aep.csv")
-    es_Jadid1 = es_Jadid1[["U", "S", "Eveil Scientifique", "Sèance"]].dropna(axis=0)
-    es_Jadid1["Sèance"] = [json.loads(es_Jadid1["Sèance"][i]) for i in range(len(es_Jadid1["Sèance"]))]
+    es_Jadid1 = pd.DataFrame()
+    #es_Jadid1 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Jadid\Repa EvSc Jadid 1aep.csv")
+    #es_Jadid1 = es_Jadid1[["U", "S", "Eveil Scientifique", "Sèance"]].dropna(axis=0)
+    #es_Jadid1["Sèance"] = [json.loads(es_Jadid1["Sèance"][i]) for i in range(len(es_Jadid1["Sèance"]))]
 
     es_Jadid2 = pd.DataFrame()
     es_Jadid3 = pd.DataFrame()
@@ -143,10 +139,10 @@ def EvSc_manuel_level(level, manuel):
     es_fadaa3 = pd.DataFrame()
     es_fadaa4 = pd.DataFrame()
     es_fadaa5 = pd.DataFrame()
-    es_fadaa6 = pd.read_csv(
-        r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Fada2\Repa EvSc Fada2 6aep (Edited _3).csv")
-    es_fadaa6 = es_fadaa6[["U", "S", "Eveil Scientifique", "Sèance"]].dropna(axis=0)
-    es_fadaa6["Sèance"] = [json.loads(es_fadaa6["Sèance"][i]) for i in range(len(es_fadaa6["Sèance"]))]
+    es:fadaa6 = pd.DataFrame()
+    #es_fadaa6 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Fada2\Repa EvSc Fada2 6aep (Edited _3).csv")
+    #es_fadaa6 = es_fadaa6[["U", "S", "Eveil Scientifique", "Sèance"]].dropna(axis=0)
+    #es_fadaa6["Sèance"] = [json.loads(es_fadaa6["Sèance"][i]) for i in range(len(es_fadaa6["Sèance"]))]
     es_fadaa_manuel = [es_fadaa1,
                        es_fadaa2,
                        es_fadaa3,
@@ -181,9 +177,9 @@ def EvSc_manuel_level(level, manuel):
     # Moufid
 
     es_moufid1 = pd.DataFrame()
-    es_moufid2 = pd.read_csv(
-        r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Moufid\Repa EvSc Moufid 2aep (Edited _5).csv")
-    es_moufid2["Sèance"] = [json.loads(es_moufid2["Sèance"][i]) for i in range(len(es_moufid2["Sèance"]))]
+    es_moufid2 = pd.DataFrame()
+    #es_moufid2 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Moufid\Repa EvSc Moufid 2aep (Edited _5).csv")
+    #es_moufid2["Sèance"] = [json.loads(es_moufid2["Sèance"][i]) for i in range(len(es_moufid2["Sèance"]))]
 
     es_moufid3 = pd.DataFrame()
     es_moufid4 = pd.DataFrame()
@@ -202,9 +198,9 @@ def EvSc_manuel_level(level, manuel):
     es_mounir2 = pd.DataFrame()
     es_mounir3 = pd.DataFrame()
     es_mounir4 = pd.DataFrame()
-    es_mounir5 = pd.read_csv(
-        r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Mounir\Repa EvSc Mounir 5aep (Edited _6).csv")
-    es_mounir5["Sèance"] = [json.loads(es_mounir5["Sèance"][i]) for i in range(len(es_mounir5["Sèance"]))]
+    es_mounir5 = pd.DataFrame()
+    #es_mounir5 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\EvSc repa\Mounir\Repa EvSc Mounir 5aep (Edited _6).csv")
+    #es_mounir5["Sèance"] = [json.loads(es_mounir5["Sèance"][i]) for i in range(len(es_mounir5["Sèance"]))]
 
     es_mounir6 = pd.DataFrame()
     es_mounir_manuel = [es_mounir1,
