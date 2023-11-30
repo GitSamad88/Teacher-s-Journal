@@ -52,6 +52,11 @@ col1.write("Le Cahier Journalier Educatif a été créé avec la conviction que 
          "devrait être aussi enrichissante que l'enseignement lui-même."
          " Notre application vise à simplifier le processus de création de cahiers de journal tout en offrant"
          " des outils puissants pour améliorer la communication et l'efficacité pédagogique.")
+# connect google adsense
+col2.write("ads")
+col2.markdown("""
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"
+    crossorigin="anonymous"></script>""",unsafe_allow_html=True)
 
 col1.write("Téléchargez Le Cahier Journalier Educatif dès aujourd'hui et découvrez "
          "comment notre application peut transformer"
