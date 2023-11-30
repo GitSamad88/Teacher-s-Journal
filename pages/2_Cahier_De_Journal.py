@@ -764,3 +764,5 @@ if (teaching_language == "Français"):
 
 elif (teaching_language == "Arabe"):
     form.warning("La création du cahier de journal de la langue arabe est impossible pour le moment!")
+
+col2.markdown('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"crossorigin="anonymous"></script>')
