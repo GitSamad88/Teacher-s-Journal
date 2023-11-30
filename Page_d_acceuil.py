@@ -5,8 +5,8 @@ import numpy as np
 st.set_page_config(
     page_title="Multipage App")
 
-st.sidebar.write("This app is made by "+"<a href='www.linkedin.com/in/abdessamad-taoufiq-082013209' id='my-link'>TAOUFIQ ABDESSAMAD</a>", unsafe_allow_html=True)
-
+link = "This app is made by[TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209)"
+st.sidebar.markdown(link,unsafe_allow_html=True)
 
 st.title("Le Cahier Journalier Educatif")
 st.write("Bienvenue,"
