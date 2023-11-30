@@ -40,9 +40,6 @@ col1.write("5. ***Sécurité des Données :*** "
          " Journal Educatif assure une protection maximale des informations confidentielles,"
          " garantissant que seuls les enseignants et les parents autorisés ont accès aux données. ")
 
-col2.image("https://drive.google.com/file/d/164XGBkyGuIAIjA9msI8VN5n9y9dlRbov/gviz/tq?tqx=out:jpg&image=cj1-S2-U4-Capture")
-image_url="https://drive.google.com/uc?export=view&id=164XGBkyGuIAIjA9msI8VN5n9y9dlRbov"
-col2.markdown(f'<a href={image_url}><img src={image_url} style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>')
 
 col1.subheader("Pourquoi Le Cahier  Journalier Educatif ?")
 
