@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
+
+
 st.set_page_config(
     page_title="Multipage App")
+
+
+st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
 
 link = "This app is made by [TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209/)"
 st.sidebar.markdown(link,unsafe_allow_html=True)
