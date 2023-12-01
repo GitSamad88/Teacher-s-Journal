@@ -5,6 +5,10 @@
 # !pip3 install deepl
 # !pip3 install tabula-py
 # !pip3 install openpyxl
+import os
+from bs4 import BeautifulSoup
+import pathlib
+import shutil
 
 import streamlit as st
 import pandas as pd
