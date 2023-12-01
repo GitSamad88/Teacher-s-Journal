@@ -767,7 +767,5 @@ elif (teaching_language == "Arabe"):
     
 # connect google adsense
 col2.write("ads")
-col2.markdown("""
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"
-    crossorigin="anonymous"></script>""",unsafe_allow_html=True
+col2.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True
              )
