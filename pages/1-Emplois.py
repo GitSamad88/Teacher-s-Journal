@@ -3,9 +3,11 @@ import pandas as pd
 import numpy as np
 from io import BytesIO
 
+# connect google adsense
+st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
+
+
 buffer = BytesIO()
-
-
 def emplois_df(emplois):
     emplois["Jour"] = jours
     emplois["Matière"] = matieres
@@ -149,7 +151,4 @@ emplois[["Sèance", "Durèe"]] = emplois[["Sèance", "Durèe"]].astype("int")
 
 st.table(emplois)
 st.session_state["emplois"]=emplois
-# connect google adsense
-st.write("ads")
-st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
 
