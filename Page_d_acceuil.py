@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-
+st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
 st.set_page_config(
     page_title="Multipage App")
 
@@ -54,8 +54,6 @@ col1.write("Le Cahier Journalier Educatif a été créé avec la conviction que 
          " des outils puissants pour améliorer la communication et l'efficacité pédagogique.")
 # connect google adsense
 col2.write("ads")
-col2.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
-
 col1.write("Téléchargez Le Cahier Journalier Educatif dès aujourd'hui et découvrez "
          "comment notre application peut transformer"
          " la façon dont les enseignants du cycle primaire gèrent leurs cahiers de journal, "
