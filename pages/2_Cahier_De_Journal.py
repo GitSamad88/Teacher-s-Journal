@@ -22,7 +22,9 @@ import warnings
 import json
 warnings.filterwarnings("ignore")
 
-
+# connect google adsense
+st.write("ads")
+st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
 def fr_manuel_level(manuel, level):
     # mes_app1 = pd.read_csv(r"C:\Users\hp\Downloads\edited repartitions\fr repa\Mes apprentissage\Repa  fr dire faire 1aep final.csv")  # to be changed!
     mes_app1 = pd.read_csv(
@@ -764,8 +766,4 @@ if (teaching_language == "Français"):
 
 elif (teaching_language == "Arabe"):
     form.warning("La création du cahier de journal de la langue arabe est impossible pour le moment!")
-    
-# connect google adsense
-col2.write("ads")
-col2.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True
-             )
+
