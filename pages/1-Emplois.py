@@ -4,7 +4,7 @@ import numpy as np
 import os
 from bs4 import BeautifulSoup
 import pathlib
-import shutilp
+import shutil
 from io import BytesIO
 
 # connect google adsense
