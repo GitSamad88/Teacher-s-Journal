@@ -151,7 +151,5 @@ st.table(emplois)
 st.session_state["emplois"]=emplois
 # connect google adsense
 st.write("ads")
-st.markdown("""
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"
-    crossorigin="anonymous"></script>""",unsafe_allow_html=True)
+st.markdown("""<meta name="google-adsense-account" content="ca-pub-4265574502229447">""",unsafe_allow_html=True)
 
