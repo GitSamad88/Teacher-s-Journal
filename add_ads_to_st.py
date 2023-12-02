@@ -3,7 +3,7 @@ import os
 from bs4 import BeautifulSoup
 import pathlib
 import shutil
-import streamlit as st
+#import streamlit as st
 
 GA_ID = "google_analytics"
 ga_script = """<!-- Google tag (gtag.js) -->
@@ -15,8 +15,6 @@ ga_script = """<!-- Google tag (gtag.js) -->
 
   gtag('config', 'G-2TE23YZQ28');
 </script> """
-print(os.path.dirname(st.__file__))
-
 
 def inject_ga():
     index_path = pathlib.Path(st.__file__).parent / "static" / "index.html"
@@ -29,10 +27,7 @@ def inject_ga():
             shutil.copy(index_path, bck_index)
         html = str(soup)
         new_html = html.replace('<head>', '<head>\n' + ga_script)
-        index_path.write_text(new_html)
-    st.write(f"new html {new_html}")
-    st.write(f"index path {index_path}")
-     
+
 
 
 inject_ga()
