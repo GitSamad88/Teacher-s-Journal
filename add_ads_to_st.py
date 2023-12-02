@@ -7,14 +7,14 @@ import streamlit as st
 
 GA_ID = "google_analytics"
 ga_script = """<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TE23YZQ28"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-14J0CKQ261"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-2TE23YZQ28');
-</script> """
+  gtag('config', 'G-14J0CKQ261');
+</script>"""
 
 def inject_ga():
     index_path = pathlib.Path(st.__file__).parent / "static" / "index.html"
