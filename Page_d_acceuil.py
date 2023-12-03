@@ -27,6 +27,9 @@ ga_script = """<!-- Google tag (gtag.js) -->
 def inject_ga():
     index_path = pathlib.Path(st.__file__).parent / "static" / "index.html"
     soup = BeautifulSoup(index_path.read_text(), features="html.parser")
+    html = str(soup)
+    html = html.replace(ga_script,"")
+    html = html.replace(g_ads, "")
   
     if not soup.find(id=GA_ID):
         bck_index = index_path.with_suffix('.bck')
@@ -35,9 +38,7 @@ def inject_ga():
             shutil.copy(bck_index, index_path)
         else:
             shutil.copy(index_path, bck_index)
-        html = str(soup)
-        html = html.replace(ga_script,"")
-        html = html.replace(g_ads, "")
+    
         new_html = html.replace('<head>', '<head>\n' + ga_script + g_ads)
         index_path.write_text(new_html)
 inject_ga()
