@@ -152,7 +152,7 @@ emplois[["Sèance", "Durèe"]] = emplois[["Sèance", "Durèe"]].astype("int")
 st.table(emplois)
 st.session_state["emplois"]=emplois
 
-# google ads script
+# google ads and analytics scripts
 
 g_ads = """<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"
      crossorigin="anonymous"></script>"""
