@@ -154,8 +154,7 @@ st.table(emplois)
 st.session_state["emplois"]=emplois
 
 
-g_ads = """<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"
-     crossorigin="anonymous"></script>"""
+g_ads = """<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"crossorigin="anonymous"></script>"""
 
 
 GA_ID = "google_analytics"
