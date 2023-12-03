@@ -9,6 +9,9 @@ import shutil
 st.set_page_config(
     page_title="Multipage App")
 
+g_ads = """<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4265574502229447"
+     crossorigin="anonymous"></script>"""
+
 
 GA_ID = "google_analytics"
 ga_script = """<!-- Google tag (gtag.js) -->
@@ -33,7 +36,8 @@ def inject_ga():
             shutil.copy(index_path, bck_index)
         html = str(soup)
         html = html.replace(ga_script,"")
-        new_html = html.replace('<head>', '<head>\n' + ga_script)
+        html = html.replace(g_ads, "")
+        new_html = html.replace('<head>', '<head>\n' + ga_script + g_ads)
         index_path.write_text(new_html)
 inject_ga()
 
