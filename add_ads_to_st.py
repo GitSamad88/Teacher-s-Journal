@@ -26,6 +26,7 @@ def inject_ga():
         else:
             shutil.copy(index_path, bck_index)
         html = str(soup)
+        html = html.replace(ga_script,"")
         new_html = html.replace('<head>', '<head>\n' + ga_script)
 
 
