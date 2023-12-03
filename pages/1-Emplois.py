@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
-#from bs4 import BeautifulSoup
-#import pathlib
-#import shutil
+from bs4 import BeautifulSoup
+import pathlib
+import shutil
 from io import BytesIO
 
 buffer = BytesIO()
