@@ -8,12 +8,7 @@ import shutil
 
 st.set_page_config(
     page_title="Multipage App")
-import os
 
-from bs4 import BeautifulSoup
-import pathlib
-import shutil
-import streamlit as st
 
 GA_ID = "google_analytics"
 ga_script = """<!-- Google tag (gtag.js) -->
