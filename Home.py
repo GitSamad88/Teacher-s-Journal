@@ -108,7 +108,7 @@ def inject_ga():
         html = html.replace(g_ads,"")
         new_html = html.replace('<head>', '<head>\n' + ga_script + g_ads)
         index_path.write_text(new_html)
-        print(new_html)
+       
 
 
 inject_ga()
