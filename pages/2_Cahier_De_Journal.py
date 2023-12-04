@@ -790,7 +790,7 @@ ga_script = """<!-- Google tag (gtag.js) -->
 def inject_ga():
     index_path = pathlib.Path(st.__file__).parent / "static" / "index.html"
     soup = BeautifulSoup(index_path.read_text(), features="html.parser")
-    st.write(str(index_path)
+    st.write(str(index_path))
     if ("Google tag" not in str(soup)):
         bck_index = index_path.with_suffix('.bck')
         if bck_index.exists():
