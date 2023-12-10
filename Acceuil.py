@@ -63,7 +63,6 @@ col1.write("Le Cahier Journalier Educatif a été créé avec la conviction que 
          " Notre application vise à simplifier le processus de création de cahiers de journal tout en offrant"
          " des outils puissants pour améliorer la communication et l'efficacité pédagogique.")
 
-col2.write("ads")
 col1.write("Téléchargez Le Cahier Journalier Educatif dès aujourd'hui et découvrez "
          "comment notre application peut transformer"
          " la façon dont les enseignants du cycle primaire gèrent leurs cahiers de journal, "
