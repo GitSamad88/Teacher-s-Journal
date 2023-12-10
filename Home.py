@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
 import pandas as pd
 import numpy as np
 import os
@@ -8,6 +9,10 @@ import shutil
 
 st.set_page_config(
     page_title="Multipage App")
+
+logo_short_url = "https://shorturl.at/dzDJU"
+add_logo(logo_short_url,height=100)
+
 
 
 link = "This app is made by [TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209/)"
