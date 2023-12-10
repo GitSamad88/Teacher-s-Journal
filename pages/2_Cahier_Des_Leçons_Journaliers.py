@@ -612,6 +612,10 @@ def U_W_D(fr_manuel1, fr_manuel2, math_manuel1, math_manuel2, es_manuel1, es_man
 logo_short_url = "https://shorturl.at/dzDJU"
 add_logo(logo_short_url,height=100)
 
+# Made by
+link = "Made by [TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209/)"
+st.sidebar.markdown(link,unsafe_allow_html=True)
+
 # Title
 st.title("Le Cahier Journalier Du Professeur De Cycle Primaire ")
 st.empty()
