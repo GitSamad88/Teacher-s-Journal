@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
 import pandas as pd
 import numpy as np
 import os
@@ -6,6 +7,9 @@ from bs4 import BeautifulSoup
 import pathlib
 import shutil
 from io import BytesIO
+
+logo_short_url = "https://shorturl.at/dzDJU"
+add_logo(logo_short_url,height=100)
 
 buffer = BytesIO()
 def emplois_df(emplois):
