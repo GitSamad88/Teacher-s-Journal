@@ -11,6 +11,9 @@ from io import BytesIO
 logo_short_url = "https://shorturl.at/dzDJU"
 add_logo(logo_short_url,height=100)
 
+link = "Made by [TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209/)"
+st.sidebar.markdown(link,unsafe_allow_html=True)
+
 buffer = BytesIO()
 def emplois_df(emplois):
     emplois["Jour"] = jours
