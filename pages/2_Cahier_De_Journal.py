@@ -1,16 +1,10 @@
-# !pip3 install translate
-# !pip3 install babel
-# !pip3 install googletrans
-# !pip3 install py-translate
-# !pip3 install deepl
-# !pip3 install tabula-py
-# !pip3 install openpyxl
 import os
 from bs4 import BeautifulSoup
 import pathlib
 import shutil
 
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
 import pandas as pd
 import numpy as np
 
@@ -607,19 +601,18 @@ def U_W_D(fr_manuel1, fr_manuel2, math_manuel1, math_manuel2, es_manuel1, es_man
         sheet["B8"] = f'Jour: {1 + len(weeks_days) % 6}'
         weeks_days.append(i[0])
 
-        #print("----------------------------")
 
-    # wb.save(f'Cahier_Journalier_U{1+list(Unites.values()).index(unite)} niveaux {C1}-{C2}.xlsx')
     wb.save(buffer)
     return buffer
 
-#j1=U_W_D(fr_manuel1="Mes apprentissages", fr_manuel2 = "Mes apprentissages", math_manuel1="الفضاء", math_manuel2="الجيد", es_manuel1="المنهل", es_manuel2="المرجع", C1=3, C2=4, séance_de_lundi="Matinée", u="U2")
-#print(j1)
+
 
 # """"----------------Streamlit App-----------------"""
+# add logo
+logo_short_url = "https://shorturl.at/dzDJU"
+add_logo(logo_short_url,height=100)
 
 # Title
-
 st.title("Le Cahier Journalier Du Professeur De Cycle Primaire ")
 st.empty()
 
