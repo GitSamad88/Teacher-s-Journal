@@ -15,7 +15,7 @@ add_logo(logo_short_url,height=100)
 
 
 
-link = "This app is made by [TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209/)"
+link = "Made by [TAOUFIQ ABDESSAMAD](https://www.linkedin.com/in/abdessamad-taoufiq-082013209/)"
 st.sidebar.markdown(link,unsafe_allow_html=True)
 
 st.title("Le Cahier Journalier Educatif")
